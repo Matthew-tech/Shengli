@@ -6,7 +6,7 @@
 import shutil
 import pickle as pkl
 import os
-
+from Configure.global_config import file_loc_gl
 
 def best_paras_pkl():
     paras = {}
@@ -23,7 +23,7 @@ def best_paras_pkl():
     paras['loss'] = 'CEE'
 
     # 保存最优参数组合
-    paras_dir = 'Results/point_to_label/BiRNN/best_paras'
+    paras_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/best_paras')
     if os.path.isdir(paras_dir):
         shutil.rmtree(paras_dir)
         os.mkdir(paras_dir)

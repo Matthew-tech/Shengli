@@ -40,18 +40,20 @@ line_skip = 100
 class file_loc_global():  # 地震数据，井数据，油性数据存储位置
     def __init__(self):
         # 预处理过程需要的文件或文件夹
-        self.saveFilePath_Base = 'data/full_train_data/'  # 修改
-        self.well_data_dir = 'data/1-well'
+        self.data_root = '../data'
+
+        self.saveFilePath_Base = os.path.join(self.data_root,'full_train_data/')  # 修改
+        self.well_data_dir = os.path.join(self.data_root,'1-well')
         self.well_loc_file = os.path.join(self.well_data_dir, 'well_location_new.csv')
         self.seismic_sgy_file_path_base = self.get_seismic_data_filepath()  # 修改
-        self.full_train_data = 'data/full_train_data'  # 'data/full_train_data/'修改
+        self.full_train_data = os.path.join(self.data_root,'full_train_data')  # 'data/full_train_data/'修改
         self.well_post_data = os.path.join(self.well_data_dir, 'post_data')
         self.depth_time_rel_dir = os.path.join(self.well_data_dir, 'depth_time_rel')
         self.Target_segment_per_well = os.path.join(self.well_data_dir, 'Target_segment_per_well_zhu.csv')
         self.oil_data_dir = os.path.join(self.well_data_dir, "oil_data")
-        self.training_data_dir = 'data/4-training_data'  # 修改
+        self.training_data_dir = os.path.join(self.data_root,'4-training_data')  # 修改
         # 时间表示的顶底文件
-        self.bottom_top_file_dir = 'data/2-bottom_top_files/'
+        self.bottom_top_file_dir = os.path.join(self.data_root,'2-bottom_top_files/')
 
         # 全部的有标记的数据
         self.well_reservoir_Info_all = os.path.join(self.well_post_data, 'well_reservoir_rock_oil_merged.csv')
@@ -70,6 +72,15 @@ class file_loc_global():  # 地震数据，井数据，油性数据存储位置
         self.high_correlation_saved_file = os.path.join(self.full_train_data, 'high_correlation_attrs.pkl')
         self.correlation_file = os.path.join(self.full_train_data, 'reservoir_seismic_correlation.csv')
         self.infopresent = 'InfoPresent/'
+
+        # 保存结果的文件夹
+        self.results_root = '../Results'
+
+        # 保存权重的文件夹
+        self.weights_root = '../trained_models'
+        self.weights_BiRNN = os.path.join(self.weights_root,'BiRNN')
+        self.weights_SVM = os.path.join(self.weights_root,'SVM')
+        self.weights_xgb = os.path.join(self.weights_root, 'binary_xgboost')
 
     def get_seismic_data_filepath(self):
         if os.path.exists('Configure/seismic_data_path.txt'):

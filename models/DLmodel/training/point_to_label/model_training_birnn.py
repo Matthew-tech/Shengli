@@ -16,7 +16,7 @@ import multiprocessing
 import pickle as pkl
 import pandas as pd
 import os
-
+from Configure.global_config import file_loc_gl
 
 def plot_relation_error_f1(source_filename=None,use_alllabels=False,use_split=False):
     file_dir = ''
@@ -73,7 +73,7 @@ def plot_relation_error_f1(source_filename=None,use_alllabels=False,use_split=Fa
             else:
                 y_loc = error+0.22
             ax1.text(i,y_loc,paras[i],rotation=90)
-        pic_dir = 'Results/point_to_label/BiRNN/pics'
+        pic_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/pics')
         if not os.path.exists(pic_dir):
             os.makedirs(pic_dir)
         plt.savefig(os.path.join(pic_dir,'error_f_curve.png'),dpi=100)
@@ -201,7 +201,7 @@ def predict_training(train_x, train_y, validation_x, validation_y, ts_max, paras
             plt.xlabel('Iteration',fontsize=fontsize)
             plt.ylabel('Cross Entropy Loss',fontsize=fontsize)
             plt.title('Training Loss and Validation Loss')
-            fig_dir = 'Results/point_to_label/BiRNN/pics'
+            fig_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/pics')
             if not os.path.exists(fig_dir):
                 os.makedirs(fig_dir)
             plt.savefig(os.path.join(fig_dir,'train_val_loss.png'),dpi=200)
@@ -236,7 +236,7 @@ def predict_training(train_x, train_y, validation_x, validation_y, ts_max, paras
             
         if save:
             print('正在保存权重文件...')
-            weight_dir = 'models/models_weight/BiRNN'
+            weight_dir = file_loc_gl.weights_BiRNN
             if not os.path.exists(weight_dir):
                 os.makedirs(weight_dir)
             weight_name = paras_weight_name(paras)
@@ -255,8 +255,8 @@ def save_result(paras, result):
         [paras["count"], paras["model"], paras["layers"], paras["trace_range"], paras["normalize"], paras["cellsize"],
          paras["dropout"], paras["rnn_cell"], paras["use_alllabel"], result[0], result[1], result[2]])
 
-    with open('Results/point_to_label/BiRNN/model_selection_temp_results/' + params2name(paras) + '.csv', 'w',
-              newline='') as file:
+    with open(os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/model_selection_temp_results/') +
+                      params2name(paras) + '.csv', 'w', newline='') as file:
         writer = csv.writer(file, dialect='excel')
         writer.writerow(['count', 'model', 'layers', 'trace_range', 'normalize', 'cellsize', 'dropout', 'rnn_cell',
                          'use_alllabel', 'error', 'precision', 'recall'])
@@ -266,11 +266,12 @@ def save_result(paras, result):
 
 def model_selection_training():
     # 创建临时保存BiRNN结果的目录
-    if os.path.isdir('Results/point_to_label/BiRNN/model_selection_temp_results'):
-        shutil.rmtree('Results/point_to_label/BiRNN/model_selection_temp_results')
-        os.mkdir('Results/point_to_label/BiRNN/model_selection_temp_results')
+    model_selection_result = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/model_selection_temp_results')
+    if os.path.isdir(model_selection_result):
+        shutil.rmtree(model_selection_result)
+        os.mkdir(model_selection_result)
     else:
-        os.mkdir('Results/point_to_label/BiRNN/model_selection_temp_results')
+        os.mkdir(model_selection_result)
 
     all_labels = get_labels()
     count = 1
@@ -341,7 +342,7 @@ def model_evaluation(save_graph=True):
     paras['loss'] = 'CEE'
 
     # 保存最优参数组合
-    paras_dir = 'Results/point_to_label/BiRNN/best_paras'
+    paras_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/best_paras')
     if os.path.isdir(paras_dir):
         shutil.rmtree(paras_dir)
         os.mkdir(paras_dir)
@@ -370,7 +371,7 @@ def model_evaluation(save_graph=True):
     print('保存图')
     if not save_graph:
         # 保存统计结果
-        results_dir = 'Results/test_wells_result/'
+        results_dir = os.path.join(file_loc_gl.results_root,'test_wells_result/')
         if not os.path.exists(results_dir):
             os.makedirs(results_dir)
         evaluate_name = 'evaluation_' + str(paras['count']) + '.csv'
@@ -401,7 +402,7 @@ def paras_selection():
     """
     根据临时结果选择最优参数组合
     """
-    file_path = 'Results/point_to_label/BiRNN/model_selection_temp_results/merge_results.csv'
+    file_path = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/model_selection_temp_results/merge_results.csv')
     plot_relation_error_f1(file_path)
     if os.path.isfile(file_path):
         with open(file_path, 'r') as f:
@@ -417,7 +418,7 @@ def merge_results():
     """
     将不同参数组对应的临时结果进行汇总，确定最优参数组合
     """
-    file_dir = 'Results/point_to_label/BiRNN/model_selection_temp_results'
+    file_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/model_selection_temp_results')
     files = os.listdir(file_dir)
     lines = []
     i = 0
@@ -449,12 +450,13 @@ def merge_results():
                 line.append(f)
 
     # 清空保存临时结果目录下的文件
-    if os.path.isdir('Results/point_to_label/BiRNN/model_selection_temp_results'):
-        shutil.rmtree('Results/point_to_label/BiRNN/model_selection_temp_results')
-        os.mkdir('Results/point_to_label/BiRNN/model_selection_temp_results')
+    model_selection_temp_result = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/model_selection_temp_results')
+    if os.path.isdir(model_selection_temp_result):
+        shutil.rmtree(model_selection_temp_result)
+        os.mkdir(model_selection_temp_result)
     else:
-        os.mkdir('Results/point_to_label/BiRNN/model_selection_temp_results')
-    with open(os.path.join('Results/point_to_label/BiRNN/model_selection_temp_results', 'merge_results.csv'), 'w',
+        os.mkdir(model_selection_temp_result)
+    with open(os.path.join(model_selection_temp_result, 'merge_results.csv'), 'w',
               newline='') as f:
         writer = csv.writer(f)
         for line in lines:
@@ -476,7 +478,7 @@ def best_paras_pkl():
     paras['loss'] = 'CEE'
 
     # 保存最优参数组合
-    paras_dir = 'Results/point_to_label/BiRNN/best_paras'
+    paras_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/best_paras')
     if os.path.isdir(paras_dir):
         shutil.rmtree(paras_dir)
         os.mkdir(paras_dir)

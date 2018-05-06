@@ -58,7 +58,7 @@ def get_system_status():
 
 
     # model status:
-    paras_dir = 'Results/point_to_label/BiRNN/best_paras'
+    paras_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/best_paras')
     if os.path.exists(paras_dir):
         with open(os.path.join(paras_dir, 'best_paras.pkl'), 'rb') as f:
            paras = pkl.load(f)
@@ -90,7 +90,7 @@ def get_system_status():
 
 def sys_info():
     sys_status = get_system_status()
-    with open('Results/sys_info.txt', 'w') as file:
+    with open(os.path.join(file_loc_gl.results_root,'sys_info.txt'), 'w') as file:
         for key in sys_status[file_status].keys():
             file.write(str(sys_status[file_status][key]))
             file.write('\n')

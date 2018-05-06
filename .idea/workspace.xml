@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f6d6bf2-4cde-456c-ada8-22298ee134d2" name="Default" comment="" />
+    <list default="true" id="0f6d6bf2-4cde-456c-ada8-22298ee134d2" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configure/global_config.py" afterPath="$PROJECT_DIR$/Configure/global_config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bestparas.py" afterPath="$PROJECT_DIR$/bestparas.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/check_sys.py" afterPath="$PROJECT_DIR$/check_sys.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_prepare/point_to_label/get_input_data_p2l.py" afterPath="$PROJECT_DIR$/data_prepare/point_to_label/get_input_data_p2l.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_all_data_birnn.py" afterPath="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_all_data_birnn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py" afterPath="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/DLmodel/training/point_to_label/model_training_birnn.py" afterPath="$PROJECT_DIR$/models/DLmodel/training/point_to_label/model_training_birnn.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,67 +38,40 @@
     <SUITE FILE_PATH="coverage/project$check_sys.coverage" NAME="check_sys Coverage Results" MODIFIED="1511925149436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/project$model_all_predict.coverage" NAME="model_all_predict Coverage Results" MODIFIED="1512010367592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="project" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="label_plane_birnn.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="190" column="45" lean-forward="false" selection-start-line="190" selection-start-column="45" selection-end-line="190" selection-end-column="45" />
+            <state relative-caret-position="260">
+              <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_interface.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_interface.py">
+      <file leaf-file-name="get_input_data_p2l.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/get_input_data_p2l.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="-3161">
+              <caret line="230" column="58" selection-start-line="230" selection-start-column="58" selection-end-line="230" selection-end-column="58" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bestparas.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bestparas.py">
+      <file leaf-file-name="data_util_shallow.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/data_util_shallow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_generation.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_prepare/cnn_input/data_generation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="163" column="47" lean-forward="false" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
-              <folding>
-                <element signature="e#128#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_view.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/draw_pics/data_view.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global_config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Configure/global_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="360">
+              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -120,17 +102,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/DLmodel/training/point_to_label/model_training_birnn.py" />
         <option value="$PROJECT_DIR$/Results/result_modify.py" />
-        <option value="$PROJECT_DIR$/check_sys.py" />
-        <option value="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_all_data_birnn.py" />
         <option value="$PROJECT_DIR$/data_prepare/select_high_correlation_attrs.py" />
         <option value="$PROJECT_DIR$/save_high_correlation_files.py" />
         <option value="$PROJECT_DIR$/model_all_predict.py" />
         <option value="$PROJECT_DIR$/model_plane_predict.py" />
         <option value="$PROJECT_DIR$/model_train.py" />
         <option value="$PROJECT_DIR$/get_statistic.py" />
-        <option value="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py" />
         <option value="$PROJECT_DIR$/Results/predict_point.txt" />
         <option value="$PROJECT_DIR$/model_point_predict.py" />
         <option value="$PROJECT_DIR$/Configure/seismic_data_path.txt" />
@@ -139,7 +117,6 @@
         <option value="$PROJECT_DIR$/save_samples.py" />
         <option value="$PROJECT_DIR$/models/Shallowmodel/training/svm_train.py" />
         <option value="$PROJECT_DIR$/models/Shallowmodel/prediction/svm_predict.py" />
-        <option value="$PROJECT_DIR$/Configure/global_config.py" />
         <option value="$PROJECT_DIR$/data_prepare/point_to_label/cnn_input/data_generation.py" />
         <option value="$PROJECT_DIR$/demo.py" />
         <option value="$PROJECT_DIR$/draw_pics/data_view.py" />
@@ -148,6 +125,12 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/data_prepare/cnn_input/data_generation.py" />
         <option value="$PROJECT_DIR$/bestparas.py" />
+        <option value="$PROJECT_DIR$/check_sys.py" />
+        <option value="$PROJECT_DIR$/Configure/global_config.py" />
+        <option value="$PROJECT_DIR$/models/DLmodel/training/point_to_label/model_training_birnn.py" />
+        <option value="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_all_data_birnn.py" />
+        <option value="$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py" />
+        <option value="$PROJECT_DIR$/data_prepare/point_to_label/get_input_data_p2l.py" />
       </list>
     </option>
   </component>
@@ -157,12 +140,22 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="797" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -178,58 +171,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="Configure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="4-training_data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="4-training_data" type="462c0819:PsiDirectoryNode" />
-              <item name="cnn_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="data_prepare" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="data_prepare" type="462c0819:PsiDirectoryNode" />
-              <item name="cnn_input" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project" type="462c0819:PsiDirectoryNode" />
-              <item name="Results" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,7 +212,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.data_generation (1)">
-    <configuration name="data_generation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="data_generation (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -265,27 +228,9 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_prepare/cnn_input/data_generation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
     </configuration>
-    <configuration name="data_view" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/draw_pics" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="project" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draw_pics/data_view.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="get_cnn_input" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="get_cnn_input" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -301,9 +246,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_prepare/cnn_input/get_cnn_input.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
     </configuration>
-    <configuration name="get_cnn_input_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="data_view" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/draw_pics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="project" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/draw_pics/data_view.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="get_cnn_input_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -319,9 +282,9 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_prepare/cnn_input/get_cnn_input_new.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -337,7 +300,24 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.data_generation (1)" />
@@ -373,31 +353,40 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3609729" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24553572" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39916405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3260188" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39916405" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -414,55 +403,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 17.png" />
-    <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 11.png" />
-    <entry file="file://$PROJECT_DIR$/model_point_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="51" lean-forward="false" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Shengli_update_clean/project/models/Shallowmodel/prediction/svm_predict.py" />
-    <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/predict_result/predict_point.txt" />
-    <entry file="file://$PROJECT_DIR$/Results/predict_point.txt" />
-    <entry file="file://$PROJECT_DIR$/model_train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model_all_predict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svc_predict_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="42" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict_all_area.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/save_samples.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_result/pre_label.csv" />
-    <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 0.png" />
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 1.png" />
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 2.png" />
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 3.png" />
@@ -472,18 +412,11 @@
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 16.png" />
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/Well 9.png" />
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/SVC_ROC.png" />
-    <entry file="file://$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_all_data_birnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="178" column="36" lean-forward="false" selection-start-line="178" selection-start-column="36" selection-end-line="178" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Results/point_to_label/SVM/test_presentation/SVC_ROC_PR.png" />
     <entry file="file://$PROJECT_DIR$/models/Shallowmodel/training/svm_train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="106" column="35" lean-forward="false" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
+          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -491,58 +424,29 @@
     <entry file="file://$PROJECT_DIR$/models/DLmodel/model/point_to_label/BiRNN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1062">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/DLmodel/training/point_to_label/model_training_birnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="114" column="44" lean-forward="false" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/DLmodel/model/point_to_label/BiRNN_dynamic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/DLmodel/prediction/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/cnn_input/data_generation.py" />
-    <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/data_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/get_input_data_p2l.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="142" column="25" lean-forward="false" selection-start-line="142" selection-start-column="25" selection-end-line="142" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Shallowmodel/prediction/svm_predict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
-          <caret line="458" column="36" lean-forward="false" selection-start-line="458" selection-start-column="36" selection-end-line="458" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/data_util_shallow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="458" column="36" selection-start-line="458" selection-start-column="36" selection-end-line="458" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -550,18 +454,10 @@
     <entry file="file://$PROJECT_DIR$/data/plane_loc/ngs1+22_grid_28jun_154615.p701" />
     <entry file="file://$PROJECT_DIR$/data/plane_loc/ngs31_grid_28jun_154711.p701" />
     <entry file="file://$PROJECT_DIR$/data/plane_loc/ngs52_grid_28jun_155214.p701" />
-    <entry file="file://$PROJECT_DIR$/Configure/global_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/draw_pics/data_view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="860">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -571,81 +467,210 @@
     <entry file="file://$PROJECT_DIR$/data_prepare/cnn_input/get_cnn_input.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-          <folding />
+          <caret line="124" column="9" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_prepare/cnn_input/get_cnn_input_new.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/plane_loc/ng32sz_grid_28jun_154436.p701" />
     <entry file="file://$PROJECT_DIR$/data_prepare/cnn_input/data_generation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="163" column="47" lean-forward="false" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
+        <state relative-caret-position="3080">
+          <caret line="163" column="47" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
           <folding>
             <element signature="e#128#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/test.py" />
+    <entry file="file://$PROJECT_DIR$/Untitled.ipynb" />
+    <entry file="file://$PROJECT_DIR$/zhaoheng_test.py" />
+    <entry file="file://$PROJECT_DIR$/demo.py" />
+    <entry file="file://$PROJECT_DIR$/preprocess/seismic_data/get_training_seismic_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="-3000">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zhaoheng_test.py">
+    <entry file="file://$PROJECT_DIR$/preprocess/well_data/convert_reservoir_to_concise.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1404">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state relative-caret-position="-1307">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py">
+    <entry file="file://$PROJECT_DIR$/check_sys.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check_sys_status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InfoPresent/predict_all_info.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py">
+    <entry file="file://$PROJECT_DIR$/Configure/seismic_data_path.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="190" column="45" lean-forward="false" selection-start-line="190" selection-start-column="45" selection-end-line="190" selection-end-column="45" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/convert_to_concise_if.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-927">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_statistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_all_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#16#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model_point_predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_high_correlation_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/start_extractting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="39" lean-forward="true" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        <state relative-caret-position="-967">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bestparas.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="173">
+          <caret line="25" column="88" selection-start-line="25" selection-start-column="88" selection-end-line="25" selection-end-column="88" />
+          <folding>
+            <element signature="e#121#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Configure/global_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DLmodel/training/point_to_label/model_training_birnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="489" column="0" selection-start-line="489" selection-start-column="0" selection-end-line="489" selection-end-column="0" />
+          <folding>
+            <element signature="e#139#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_all_data_birnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-560">
+          <caret line="197" column="46" selection-start-line="197" selection-start-column="46" selection-end-line="197" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/data_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14061">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/DLmodel/prediction/point_to_label/label_plane_birnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="70" column="46" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/get_input_data_p2l.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3161">
+          <caret line="230" column="58" selection-start-line="230" selection-start-column="58" selection-end-line="230" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save_samples.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_prepare/point_to_label/data_util_shallow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
           <folding />
         </state>
       </provider>

@@ -87,11 +87,11 @@ class BatchGenerator_p2l(object):
         label = np.asarray(self.one_hot(self._input_y[start:end]))
         seq_len = self._seq_len[start:end]
         return {'feature':feature,'label':label,'seq_len':seq_len}
-def get_norm_param(sourcefile = 'data/full_train_data/max_min_mean_std_new.pkl'):
+def get_norm_param(sourcefile = os.path.join(file_loc_gl.data_root,'full_train_data/max_min_mean_std_new.pkl')):
     with open(sourcefile,'rb') as file:
         param_dict = pickle.load(file)      # {filename:[max, min, mean, std] }
     return param_dict
-norm_file = 'data/full_train_data/max_min_mean_std_new.pkl'
+norm_file = os.path.join(file_loc_gl.data_root,'full_train_data/max_min_mean_std_new.pkl')
 #with open(norm_file, 'rb') as file:
     #param_dict = pickle.load(file)  # {filename:[max, min, mean, std] }
 

@@ -30,7 +30,7 @@ dropout = None
 cell_type = None       # 1表示使用目标层段的label，4表示使用所有的标记label
 use_ts = None
 
-paras_dir = 'Results/point_to_label/BiRNN/best_paras'
+paras_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/best_paras')
 with open(os.path.join(paras_dir, 'best_paras.pkl'), 'rb') as f:
     paras = pickle.load(f)
 def print2csv(mode,rate,content=None):
@@ -53,7 +53,7 @@ if None in [trace_range,layer,norm,cellsize,dropout,cell_type,use_ts]:
 predict_param_com = 'tracerange_%g_layer_%g_norm_%s_cell_%g_dropout_%g_%s_ts_%s'\
                     %(trace_range,layer,norm,cellsize,dropout,cell_type,use_ts)
 # 读取归一化用的文件
-norm_dir ='data/full_train_data/'
+norm_dir =os.path.join(file_loc_gl.data_root,'full_train_data/')
 norm_filename = 'max_min_mean_std_new.pkl'
 
 with open(os.path.join(norm_dir,norm_filename), 'rb') as file:
@@ -68,7 +68,7 @@ def predict_point(line_num = 629, cdp_num = 1190, time = 1100):
     :return:          预测的label
     """
     with tf.Session() as sess:
-        weight_dir = 'models/models_weight/BiRNN/'
+        weight_dir = file_loc_gl.weights_BiRNN
         saver = tf.train.import_meta_graph(os.path.join(weight_dir, 'weights_%s.meta'%predict_param_com))
         saver.restore(sess, weight_dir + 'weights_%s'%predict_param_com)
         y = tf.get_collection('predict_network')[0]
@@ -91,7 +91,7 @@ def predict_point(line_num = 629, cdp_num = 1190, time = 1100):
         # 开始预测
         Cur_predict_labels = sess.run(y, feed_dict=feed_dict)  # [1,1,2]
         predict_label = Cur_predict_labels[0,0,1]
-        with open('Results/predict_point.txt', 'w') as file:
+        with open(os.path.join(file_loc_gl.results_root,'predict_point.txt'), 'w') as file:
             file.write(str(predict_label))
         print(predict_label)
         return predict_label
@@ -120,7 +120,7 @@ def plot_predicted_plane(pkl_file,name):
     :param predict_labels:
     :return:
     """
-    fig_dir = 'Results/point_to_label/BiRNN/pics'
+    fig_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/pics')
     if not os.path.exists(fig_dir):
         os.makedirs(fig_dir)
     figpath = os.path.join(fig_dir,'%s_predict_plane.png'%name)
@@ -146,7 +146,8 @@ def plot_predicted_plane(pkl_file,name):
         plt.savefig(figpath,dpi=1000)
 
 # 使用 BiRNN 模型对一个平面进行预测
-def predict_plane(plane_file='data/plane_loc/ng32sz_grid_28jun_154436.p701',name='ng32sz_grid_28jun_154436.p701'):
+def predict_plane(plane_file='{}/plane_loc/ng32sz_grid_28jun_154436.p701'.format(file_loc_gl.data_root),
+                  name='ng32sz_grid_28jun_154436.p701'):
     """
     对某一特定层位进行预测, 并将结果存放在Results中
     :param plane_file: 层位所在的文件位置
@@ -202,7 +203,7 @@ def predict_plane(plane_file='data/plane_loc/ng32sz_grid_28jun_154436.p701',name
             X_re.append(X[trace_no,int(range_[0][i]/2),:])
         return np.asarray(X_re).reshape([len(range_[0]),1,len(X[0,0,:])])
     with tf.Session() as sess:
-        weight_dir = 'models/models_weight/BiRNN/'
+        weight_dir = file_loc_gl.weights_BiRNN
         saver = tf.train.import_meta_graph(os.path.join(weight_dir, 'weights_%s.meta'%predict_param_com))
         saver.restore(sess, weight_dir + 'weights_%s'%predict_param_com)
         y = tf.get_collection('predict_network')[0]
@@ -247,7 +248,7 @@ def predict_plane(plane_file='data/plane_loc/ng32sz_grid_28jun_154436.p701',name
                   %(calculate_num,line_num-2-27,rate, (time_e-time_s),(time_e-time_s_all)))
             print2csv(mode='predict_plane',rate=rate,content='line_exed%g / all_line%g, rate:%g,Cur_time:%s ,all_time:%s'
                   %(calculate_num,line_num-2-27,rate, (time_e-time_s),(time_e-time_s_all)))
-        label_pre_dir = 'Results/point_to_label/BiRNN/plane_prediction'
+        label_pre_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/plane_prediction')
         if not os.path.exists(label_pre_dir):
             os.makedirs(label_pre_dir)
         

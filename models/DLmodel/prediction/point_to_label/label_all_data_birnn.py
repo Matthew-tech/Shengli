@@ -25,7 +25,7 @@ def print2csv(mode,rate,content=None):
         writer = csv.writer(file,lineterminator='\n')
         writer.writerow([content,rate])
 # b_t_dict 的key为line_no 和 cdp_no, value为时间表示的顶底
-with open('data/2-bottom_top_files/b_t_dict.pkl','rb') as file:
+with open(os.path.join(file_loc_gl.data_root,'2-bottom_top_files/b_t_dict.pkl'),'rb') as file:
     bt_dict = pickle.load(file)
 
 # weights_tracerange_0_layer_2_norm_MN_cell_16_dropout_0.3_GRU_ts_False.index
@@ -37,7 +37,7 @@ dropout = None
 cell_type = None       # 1表示使用目标层段的label，4表示使用所有的标记label
 use_ts = None
 
-paras_dir = 'Results/point_to_label/BiRNN/best_paras'
+paras_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/best_paras')
 with open(os.path.join(paras_dir, 'best_paras.pkl'), 'rb') as f:
     paras = pickle.load(f)
 
@@ -66,7 +66,7 @@ if None in [trace_range,layer,norm,cellsize,dropout,cell_type,use_ts]:
 predict_param_com = 'tracerange_%g_layer_%g_norm_%s_cell_%g_dropout_%g_%s_ts_%s'\
                     %(trace_range,layer,norm,cellsize,dropout,cell_type,use_ts)
 # 读取归一化用的文件
-norm_dir ='data/full_train_data/'
+norm_dir =os.path.join(file_loc_gl.data_root,'full_train_data/')
 norm_filename = 'max_min_mean_std_new.pkl'
 
 with open(os.path.join(norm_dir,norm_filename), 'rb') as file:
@@ -162,7 +162,7 @@ def print2result(trace_range,trace_start,head,trace_scope,predict_labels):
     :param predict_labels:  预测的label
     :return:
     """
-    res_dir = 'Results/point_to_label/BiRNN/'
+    res_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/')
     res_file = os.path.join(res_dir,'result_%s'%(predict_param_com))
     with open(res_file,'ab') as file:
         trace_count = 0
@@ -195,7 +195,7 @@ def get_feed_x(X,range_,max_len):
     return np.asarray(X_ret).reshape([-1,max_len,attr_num])
 def predict_all_area(trace_range = trace_range):
     with tf.Session() as sess:
-        weight_dir = 'models/models_weight/BiRNN/'#'models/models_weight/BiRNN/'
+        weight_dir = file_loc_gl.weights_BiRNN
         saver = tf.train.import_meta_graph(os.path.join(weight_dir, 'weights_%s.meta'%predict_param_com))
         saver.restore(sess, weight_dir + 'weights_%s'%predict_param_com)
         y = tf.get_collection('predict_network')[0]
@@ -213,7 +213,7 @@ def predict_all_area(trace_range = trace_range):
         #for trace_no in range(line_skip*cdp_num,(line_num - 27) * cdp_num):  # 遍历文件中的每一道，trace_no 从 0 开始计数
         calculate_num = 0
         time_s_all = datetime.datetime.now()
-        res_dir = 'Results/point_to_label/BiRNN/'
+        res_dir = os.path.join(file_loc_gl.results_root,'point_to_label/BiRNN/')
         res_file = os.path.join(res_dir,'result_%s'%(predict_param_com))
         if os.path.exists(res_file+'_mod.sgy'):
             print('预测文件：%s已生成!'%res_file+'_mod.sgy')
