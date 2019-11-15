@@ -12,6 +12,7 @@ import os
 from data_prepare.point_to_label.get_input_data_p2l import get_labels, get_seismic_data, get_ts_data
 import pickle
 import numpy as np
+import pandas as pd
 def merge(seismic_data,labels):
     """
     将 seismic_data 和 labels合并到一起
@@ -101,6 +102,9 @@ def get_input(paras = {'norm':'GN','ts':True},part = {'train':0.6, 'validation':
         test_data = get_part_data(data, test_key,return_samples=True)
     return train_data, validation_data, test_data
 if __name__ == '__main__':
-    # save_samples()
+    # save_samples()#原文件__main__只有这一行
+
     train_data, validation_data, test_data=get_input(paras = {'norm':'GN','ts':False})
-    print(  " ")
+    pd.to_pickle(train_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_train_data_76d.pkl")
+    pd.to_pickle(validation_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_val_data_76d.pkl")
+    pd.to_pickle(test_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_test_data_76d.pkl")
