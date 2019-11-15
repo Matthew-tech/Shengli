@@ -1,6 +1,6 @@
 import sys
 import time
-#sys.path.append("/disk2/Shengli/project/")
+sys.path.append("/disk3/zk/aboutoil/Shengli")
 from data_prepare.point_to_label.data_util_shallow import *
 import numpy as np
 import csv

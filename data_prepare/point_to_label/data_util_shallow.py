@@ -4,6 +4,9 @@
 # @Author  : Eric
 # @File    : data_util_shallow.py
 # 生成浅层方法用到的数据输入
+import sys
+import time
+sys.path.append("/disk3/zk/aboutoil/Shengli")
 from Configure.global_config import file_loc_gl
 import os
 from data_prepare.point_to_label.get_input_data_p2l import get_labels, get_seismic_data, get_ts_data
@@ -98,4 +101,6 @@ def get_input(paras = {'norm':'GN','ts':True},part = {'train':0.6, 'validation':
         test_data = get_part_data(data, test_key,return_samples=True)
     return train_data, validation_data, test_data
 if __name__ == '__main__':
-    save_samples()
+    # save_samples()
+    train_data, validation_data, test_data=get_input(paras = {'norm':'GN','ts':False})
+    print(  " ")

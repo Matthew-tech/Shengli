@@ -40,7 +40,7 @@ line_skip = 100
 class file_loc_global():  # 地震数据，井数据，油性数据存储位置
     def __init__(self):
         # 预处理过程需要的文件或文件夹
-        self.data_root = '../data'
+        self.data_root = '/disk3/zk/aboutoil/Shengli/data'
 
         self.saveFilePath_Base = os.path.join(self.data_root,'full_train_data/')  # 修改
         self.well_data_dir = os.path.join(self.data_root,'1-well')
