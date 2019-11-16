@@ -1,0 +1,2 @@
+model_checkpoint_path: "weights_tracerange_0_layer_2_norm_MN_cell_16_dropout_0.3_GRU_ts_False"
+all_model_checkpoint_paths: "weights_tracerange_0_layer_2_norm_MN_cell_16_dropout_0.3_GRU_ts_False"
