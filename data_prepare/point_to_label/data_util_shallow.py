@@ -107,4 +107,4 @@ if __name__ == '__main__':
     train_data, validation_data, test_data=get_input(paras = {'norm':'GN','ts':False})
     pd.to_pickle(train_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_train_data_76d.pkl")
     pd.to_pickle(validation_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_val_data_76d.pkl")
-    pd.to_pickle(test_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_test_data_76d.pkl")
+    pd.to_pickle(test_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_test_data_76d.pkl") 
