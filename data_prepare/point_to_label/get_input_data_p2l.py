@@ -128,9 +128,10 @@ def norm(seismic_data_map, Cur_file,type = '',trace_range = 0):
                 for i in range(len(seismic_data_map[key])):
                     seismic_data_map[key][i] = [(seismic_data_map[key][i][j]-min_value)/bias for j in range(len(seismic_data_map[key][i]))]
         return seismic_data_map, paras
+#获取属性文件的list （可选择去掉高相关性的特征）
 def get_files_list(feature_file_dir=file_loc_gl.full_train_data):
     """
-    获取经过排序的特征文件夹
+    获取经过排序的特征文件夹  
     :param feature_file_dir:
     :return:
     """
