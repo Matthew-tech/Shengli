@@ -20,7 +20,8 @@ def check_folder(filepath):
     check whether filepath exists.
     """
     if not os.path.exists(filepath):
-        os.mkdir(filepath)
+        # os.mkdir(filepath)
+        os.makedirs(filepath)
     return filepath
 
 def xgboost_search_params():
@@ -278,6 +279,7 @@ if __name__ == "__main__":
             "colsample_bytree":0.8,
             "scale_pos_weight": 1.0
         }
+    xgboost_search_params()
     model = XGBoost(init_params = params)
     model.train()
     model.test_predict()
