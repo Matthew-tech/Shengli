@@ -1,0 +1,6 @@
+plane_data.npy是由/disk3/zk/aboutoil/Shengli/Shengli_update/project/models/Shallowmodel/prediction/xgboost_predict.py 文件(478行)生成的ng32层平面文件（/disk2/Shengli_update/project/data/plane_loc/ng32sz_grid_28jun_154436.p701）对应的xgboost训练数据（76维特征）的待预测文件（shape为(1089624, 76)  
+ng32层大小为1641*664=1089624）见xgboost_predict.py第482行
+
+/disk3/zk/aboutoil/Shengli/data/plane_loc/ng32sz_grid_28jun_154436.p701是ng32层的平面文件
+
+/disk3/zk/aboutoil/Shengli/data/plane_loc/ng32sz_grid_28jun_154436.p701.pkl是由/disk3/zk/aboutoil/Shengli/data_prepare/cnn_input/data_generation.py中的148行get_horizon_slice(filepath='',filename='',sgy_info=[])函数生成的cnn待预测文件
