@@ -104,7 +104,13 @@ def get_input(paras = {'norm':'GN','ts':True},part = {'train':0.6, 'validation':
 if __name__ == '__main__':
     # save_samples()#原文件__main__只有这一行
 
-    train_data, validation_data, test_data=get_input(paras = {'norm':'GN','ts':False})
-    pd.to_pickle(train_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_train_data_76d.pkl")
-    pd.to_pickle(validation_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_val_data_76d.pkl")
-    pd.to_pickle(test_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_test_data_76d.pkl") 
+    # train_data, validation_data, test_data=get_input(paras = {'norm':'GN','ts':False})#全部数据
+    # pd.to_pickle(train_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_train_data_76d_full.pkl")
+    # pd.to_pickle(validation_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_val_data_76d_full.pkl")
+    # pd.to_pickle(test_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_test_data_76d_full.pkl")
+
+    train_data, validation_data, test_data=get_input(paras = {'norm':'GN','ts':True})#目标层段
+
+    pd.to_pickle(train_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_train_data_76d_target.pkl")
+    pd.to_pickle(validation_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_val_data_76d_target.pkl")
+    pd.to_pickle(test_data,"/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/xgboost_test_data_76d_target.pkl") 
