@@ -1,0 +1,35 @@
+README
+
+cnn_slice_0.py:
+    功能：实现对平面的预测
+    方法：调用pred_model(num_classes, file_plane, save_file)实现
+         :param num_classes: 类别数 2
+         :param file_plane: 提取后的平面数据路径
+         :param save_file: 保存的平面预测结果路径（.pkl格式）
+         :return: 生成平面预测结果（.pkl格式）
+    如：  file_plane = 'data/cnn_test/petrel_Time_gain_attr.sgy_ngs52_grid_28jun_155214.p701.ht'
+         save_file = 'result/cnn_result/Time_pred_slice_1_52.pkl'
+         pred_model(2, file_plane, save_file)
+
+cnn_pred_target.py:
+    功能：实现对目标层段预测
+    方法：调用pred_model(num_classes, sgy_info, plane_info)
+         :param num_classes: 类别数 2
+         :param sgy_info: [sgy路径， sgy文件名]
+         :param plane_info: [顶底文件路径, t0文件， t1文件]
+         :return: result/cnn_target/pred_line_{}to{}.pkl 按照line存储的目标层段预测数据
+    如：  sgy_info = ["data/seismic", "petrel_Time_gain_attr.sgy"]
+          plane_info = ["data/plane_loc/", "t0_grid_28jun_155317.p701", "t11_grid_28jun_155411.p701"]
+          pred_model(2, sgy_info, plane_info)
+
+cnn_generator_sgy.py:
+    功能：对cnn_pred_target.py产生的结果进行处理，并生成sgy地震体数据
+    方法：调用write2sgy(seismic_data, sgy_file, plane_file)
+         :param seismic_data: 原始数据路径
+         :param sgy_file: 保存sgy结果路径
+         :param plane_file: [顶底文件路径, t0文件， t1文件]
+         :return: sgy地震体数据
+    如：  seismic_data = "data/seismic/petrel_Time_gain_attr.sgy"
+          sgy_file = "result/cnn_target/cnn_pred_petrel_Time_gain_attr_test.sgy"
+          plane_info = ["data/plane_loc/", "t0_grid_28jun_155317.p701", "t11_grid_28jun_155411.p701"]
+          write2sgy(seismic_data, sgy_file, plane_info)
