@@ -12,7 +12,7 @@ from multiprocessing import Pool, sharedctypes
 import warnings
 import gc
 import sys
-sys.path.append('/disk3/zk/aboutoil/Shengli/Shengli_update/project/Configure')  
+sys.path.append('/disk3/zk/aboutoil/Shengli/Shengli_update/project')  
 
 from Configure.global_config import file_loc_gl
 

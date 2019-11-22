@@ -1,1 +1,1 @@
-/disk2/Shengli/data/seismicdata
+/disk3/Shengli/data/seismicdata

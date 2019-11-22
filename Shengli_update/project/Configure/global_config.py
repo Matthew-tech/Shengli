@@ -72,8 +72,8 @@ class file_loc_global():  # 地震数据，井数据，油性数据存储位置
         self.infopresent = 'InfoPresent/'
 
     def get_seismic_data_filepath(self):
-        if os.path.exists('Configure/seismic_data_path.txt'):
-            with open('Configure/seismic_data_path.txt','r') as file:
+        if os.path.exists('/disk3/zk/aboutoil/Shengli/Shengli_update/project/Configure/seismic_data_path.txt'):
+            with open('/disk3/zk/aboutoil/Shengli/Shengli_update/project/Configure/seismic_data_path.txt','r') as file:
                 return file.readline()
         else:
             print('%s:不存在！'%'Configure/seismic_data_path.txt')

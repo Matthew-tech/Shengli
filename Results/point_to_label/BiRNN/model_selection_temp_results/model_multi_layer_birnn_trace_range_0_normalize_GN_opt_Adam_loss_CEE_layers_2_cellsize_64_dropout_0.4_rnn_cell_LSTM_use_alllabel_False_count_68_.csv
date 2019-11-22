@@ -1,0 +1,2 @@
+count,model,layers,trace_range,normalize,cellsize,dropout,rnn_cell,use_alllabel,error,precision,recall
+68,multi_layer_birnn,2,0,GN,64,0.4,LSTM,False,0.345117,0.288654353562,0.258506616257

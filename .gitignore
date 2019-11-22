@@ -4,3 +4,4 @@ plane_data_backup.npy
 .idea/
 .vscode/
 .ipynb_checkpoints/
+result_tracerange_0_layer_2_norm_MN_cell_16_dropout_0.3_GRU_ts_True
