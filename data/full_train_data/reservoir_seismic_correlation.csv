@@ -1,0 +1,77 @@
+Attr,correlation
+Gradient magnitude,82.4
+Trace gradient,82.1
+Quadrature amplitude,81.3
+First Derivative,81.1
+Envelope,78.9
+RMS Amplitude,77.9
+Reflection intensity,77.5
+Second derivative,75
+RMS Amplitude iterative,75
+Trace AGC,74.8
+Remove bias,74.8
+Original Amplitude,74.8
+Graphic equalizer,74.2
+Frequency filter,74.1
+Time gain,73.3
+Structural smoothing,72.8
+Relative acoustic impedance,72.2
+Trace AGC_iterative,71.6
+Median filter,69.8
+Sweet,67.1
+Chaos,64.3
+Dip deviation,62.9
+Amplitude contrast,61.8
+Dip illumination,60.9
+Generalized Spectral Decomposition,59.5
+3D Curvature,56.9
+Instantaneous phase,55.7
+Signal Amplitude_20hz,55.32
+Signal Amplitude_30hz,62.24
+Signal Amplitude_40hz,65.35
+Signal Amplitude_50hz,62.9
+Second Derivative envelope_20hz,53.346
+Second Derivative envelope_30hz,64.46
+Second Derivative envelope_40hz,68.79
+Second Derivative envelope_50hz,62.1
+Signal Envelope_20hz,52.14
+Signal Envelope_30hz,60.8
+Signal Envelope_40hz,63.9
+Signal Envelope_50hz,61.2
+Amplitude Weighted Instantaneous Frequency_20hz,56
+Amplitude Weighted Instantaneous Frequency_30hz,57.93
+Amplitude Weighted Instantaneous Frequency_40hz,60.66
+Amplitude Weighted Instantaneous Frequency_50hz,58.7
+Amplitude Weighted Instantaneous Phase_40hz,68.1
+Amplitude Weighted Instantaneous Phase_50hz,61.51
+Integration,56.87
+Amplitude Weighted Instantaneous Frequency,66.6
+Differentitation,74.1
+Amplitude Weighted Apparent Polarity,68.8
+Singal Envelope,72.4
+CDD_bigdata_from_petrel,75.56
+Amplitude Weighted Instantaneous Phase,70.65
+Angle Stack(5-15),67.31
+Angle Stack15-25,73.36
+Angle Stack(25-35),70.05
+Angle Stack(0-8),62.78
+Angle Stack(5-10),63.9
+Angle Stack(8-13),68
+Angle Stack(10-15),66.97
+Angle Stack(13-18),63.4
+Angle Stack(15-20),65.7
+Angle Stack18-23,74.47
+Angle Stack(20-25),74.47
+Angle Stack23-28,72.88
+Angle Stack(25-30),71.89
+Angle Stack(28-33),69.73
+Angle Stack(30-35),66.04
+Angle Stack(33-38),58.3
+Angle Stack(35-40),52.13
+P-Wave Velocity Reflectivity,72.37
+P-Wave Impedance Reflectivity,71.82
+S-Wave Velocity Reflectivity,58
+S-Wave Impedance Reflectivity,61.25
+Lambda Rho,65.31
+Mu Rho,57.62
+Fluid Factor,49.16

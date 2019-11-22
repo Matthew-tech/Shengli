@@ -11,7 +11,8 @@ import threading
 from multiprocessing import Pool, sharedctypes
 import warnings
 import gc
-
+import sys
+sys.path.append('/disk3/zk/aboutoil/Shengli/Shengli_update/project/Configure')  
 
 from Configure.global_config import file_loc_gl
 
@@ -46,7 +47,8 @@ class FileConfig:
     plane_savepath = os.path.join(mainpath, "data/plane_loc")
 
     #平面数据坐标
-    plane_filepath = "/disk2/Shengli_update/project/data/plane_loc/ng32sz_grid_28jun_154436.p701"
+    # plane_filepath = "/disk2/Shengli_update/project/data/plane_loc/ng32sz_grid_28jun_154436.p701"
+    plane_filepath = "/disk3/zk/aboutoil/Shengli/data/plane_loc/ng33sz_grid_28jun_154436.p701"
 
 class DataConfig:
     """
@@ -505,3 +507,5 @@ class Xgboost_Predictor:
 
         return pred
 
+data = read_plane_data()
+np.save(os.path.join(FileConfig.plane_savepath,"/disk3/zk/aboutoil/Shengli/data/plane_loc/plane_data_ng33.npy"), data)
