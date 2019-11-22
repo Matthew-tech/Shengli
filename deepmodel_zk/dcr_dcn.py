@@ -51,7 +51,7 @@ if __name__ == "__main__":
     # 4.Define Model,train,predict and evaluate
 
     device = 'cpu'
-    use_cuda = False
+    use_cuda = True
     if use_cuda and torch.cuda.is_available():
         print('cuda ready...')
         device = 'cuda:0'
@@ -68,3 +68,6 @@ if __name__ == "__main__":
     print("")
     print("test LogLoss", round(log_loss(test[target].values, pred_ans), 4))
     print("test AUC", round(roc_auc_score(test[target].values, pred_ans), 4))
+    
+    df_prroc=pd.DataFrame({'pred': pred_ans[:,0], 'label':test[target].values[:,0]})
+    df_prroc.to_pickle("./deepmodel_result/dcr_result/oil_DCN_result_1000epoch.pkl")
