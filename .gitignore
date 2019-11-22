@@ -1,2 +1,5 @@
 plane_data.npy
 plane_data_backup.npy
+.idea/
+.vscode/
+.ipynb_checkpoints/
