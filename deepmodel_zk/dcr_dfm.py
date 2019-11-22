@@ -62,7 +62,7 @@ if __name__ == "__main__":
     model.compile("adagrad", "binary_crossentropy",
                   metrics=["binary_crossentropy", "auc"],)
     model.fit(train_model_input, train[target].values,
-              batch_size=256, epochs=1000, validation_split=0.2, verbose=1)
+              batch_size=256, epochs=250, validation_split=0.2, verbose=1)
 
     pred_ans = model.predict(test_model_input, 256)
     print("")
@@ -70,4 +70,4 @@ if __name__ == "__main__":
     print("test AUC", round(roc_auc_score(test[target].values, pred_ans), 4))
 #     import pandas as pd
     df_prroc=pd.DataFrame({'pred': pred_ans[:,0], 'label':test[target].values[:,0]})
-    df_prroc.to_pickle("./deepmodel_result/dcr_result/oil_DFM_result_1000epoch.pkl")
+    df_prroc.to_pickle("./deepmodel_result/dcr_result/oil_DFM_result_250epoch.pkl")
