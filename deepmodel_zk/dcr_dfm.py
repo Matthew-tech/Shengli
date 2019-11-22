@@ -63,7 +63,7 @@ if __name__ == "__main__":
                   metrics=["binary_crossentropy", "auc"],)
     model.fit(train_model_input, train[target].values,
               batch_size=256, epochs=250, validation_split=0.2, verbose=1)
-
+    torch.save(model, './savedmodel/dfm_savedmodel_250epoch.pkl')
     pred_ans = model.predict(test_model_input, 256)
     print("")
     print("test LogLoss", round(log_loss(test[target].values, pred_ans), 4))
