@@ -518,5 +518,8 @@ class Xgboost_Predictor:
 
         return pred
 
-data = read_plane_data()
-np.save(os.path.join(FileConfig.plane_savepath,"/disk3/zk/aboutoil/Shengli/data/plane_loc/plane_data_ng33.npy"), data)
+# data = read_plane_data()
+# np.save(os.path.join(FileConfig.plane_savepath,"/disk3/zk/aboutoil/Shengli/data/plane_loc/plane_data_ng33.npy"), data)
+
+
+predict = Xgboost_Predictor()
