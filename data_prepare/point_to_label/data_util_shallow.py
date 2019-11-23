@@ -88,7 +88,7 @@ def get_input(paras = {'norm':'GN','ts':True},part = {'train':0.6, 'validation':
     :return: 训练集，验证集，测试集       [X, y]
     """
     source_dir = os.path.join(file_loc_gl.training_data_dir,'shallow_methods')
-    source_filename = 'samples_%s_ts_%s.pkl'%(paras['norm'], str(paras['ts']))
+    source_filename = 'samples_%s_ts_%s.pkl'%(paras['norm'], str(paras['ts']))#/disk3/zk/aboutoil/Shengli/data/4-training_data/shallow_methods/samples_GN_ts_False.pkl
     with open(os.path.join(source_dir,source_filename),'rb') as file:
         data = pickle.load(file)
         keys = list(data.keys())

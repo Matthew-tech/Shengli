@@ -1,0 +1,4 @@
+    本目录下的数据都是由/disk3/zk/aboutoil/Shengli/data_prepare/point_to_label/data_util_shallow.py
+    中的get_input函数生成npy文件，并由本目录下的full_data_bpy2df.ipynb以及target_data_npy2df.ipynb转换而来
+    
+    注意这里生成的数据都是经过高斯归一化的数据，因为参数为GN：get_input(paras = {'norm':'GN','ts':False})

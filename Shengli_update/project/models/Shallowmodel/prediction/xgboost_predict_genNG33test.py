@@ -66,12 +66,16 @@ class DataConfig:
     数据配置管理
     """
     feature_nb = 76
-    line_nb = 1641
-    time_nb = 1251
-    trace_nb = 664
+    # line_nb = 1641
+    line_nb = 1614
+    time_nb = 1251 #一共有1251个采样点，一个道数据共2500ms，每2ms进行一次采样。
+    # trace_nb = 664
+    trace_nb = 662
 
-    line_start = 627
-    trace_start = 1189
+    # line_start = 627
+    # trace_start = 1189
+    line_start = 629
+    trace_start = 1190
 
     data_header_byte = 240
     header_nb = 3600
@@ -276,7 +280,7 @@ def read_plane_data():
 
     corr = read_corr()
 
-    cut_loc, times = read_plane_loc(FileConfig.plane_filepath)
+    cut_loc, times = read_plane_loc(FileConfig.plane_filepath)#cut_loc是当前平面的每个点的相对坐标
 
     with open(FileConfig.max_min_mean_std_file, 'rb') as file:
         mean_std = pickle.load(file)
@@ -522,4 +526,4 @@ class Xgboost_Predictor:
 # np.save(os.path.join(FileConfig.plane_savepath,"/disk3/zk/aboutoil/Shengli/data/plane_loc/plane_data_ng33.npy"), data)
 
 
-predict = Xgboost_Predictor()
+# predict = Xgboost_Predictor()
