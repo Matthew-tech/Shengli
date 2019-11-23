@@ -4,3 +4,15 @@ ng32层大小为1641*664=1089624）见xgboost_predict.py第483行
 /disk3/zk/aboutoil/Shengli/data/plane_loc/ng32sz_grid_28jun_154436.p701是ng32层的平面文件
 
 /disk3/zk/aboutoil/Shengli/data/plane_loc/ng32sz_grid_28jun_154436.p701.pkl是由/disk3/zk/aboutoil/Shengli/data_prepare/cnn_input/data_generation.py中的148行get_horizon_slice(filepath='',filename='',sgy_info=[])函数生成的cnn待预测文件
+
+
+
+注意：
+/disk3/Shengli/data/plane_loc/plane_data.npy
+==/disk3/zk/aboutoil/Shengli/data/plane_loc/plane_data.npy是一个有问题的ng32平面76属性文件，因为它每一行都相同
+
+/disk3/Shengli/data/backup/plane_loc/plane_data.npy  
+== /disk3/zk/aboutoil/Shengli/data/plane_loc/plane_data_backup.npy
+== /disk3/zk/aboutoil/Shengli/plane_data_true.npy
+== /disk3/Shengli/Shengli_old/Shengli_update/project/data/plane_loc/plane_data.npy
+是正确的ng32层76属性待预测文件，已经成功预测，见/disk3/zk/aboutoil/Shengli/deepmodel_zk/ng32_zk_deepmodel_predict_picture.ipynb。
