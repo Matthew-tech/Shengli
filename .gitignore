@@ -1,6 +1,6 @@
 plane_data.npy
 plane_data_backup.npy
-*.npy
+plane_data*
 .idea/
 .vscode/
 .ipynb_checkpoints/
